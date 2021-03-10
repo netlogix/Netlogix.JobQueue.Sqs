@@ -1,0 +1,21 @@
+{
+    "name": "netlogix/jobqueue-sqs",
+    "type": "neos-package",
+    "description": "Implements amazon SQS in jobqueue.",
+    "require": {
+        "neos/flow": "^4.0 || ^5.0",
+        "flowpack/jobqueue-common": "~2.1.0 || ~3.0.0",
+        "aws/aws-sdk-php": "^3.27",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Netlogix\\JobQueue\\Sqs\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Netlogix.JobQueue.Sqs"
+        }
+    }
+}
